@@ -3,51 +3,65 @@ package model;
 import model.Customer;
 import model.Product;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 
 public class Order {
-	Long id_Ordr;
-	Long id_Cust;
-	Long id_Prod;
-	Date date;
+	private Long id;
+	private Customer customer;
+	private Product product;
+	private Date date;
 	private List<Order> orders;
 	
 	public Order(){
 		
 	}
 	
-	public Order(Long id_Ordr, Long id_Cust, Long id_Prod, Date date) {
-		super();
-		this.id_Ordr = id_Ordr;
-		this.id_Cust = id_Cust;
-		this.id_Prod = id_Prod;
+	public Order(Long id, Customer customer, Product product, Date date) {
+		this.id = id;
+		this.customer = customer;
+		this.product = product;
 		this.date = date;
 	}
-
-	public Long getId_Ordr() {
-		return id_Ordr;
+	
+	public void listAdd(Long id, Customer customer, Product product, Date date) {
+		orders.add(new Order(id, customer, product, date));
+	}
+	
+	public void listRemove(Long id) {
+		Iterator<Order> itr = orders.iterator();
+		while(itr.hasNext()) {
+			if(Order.getId().equals(id) ) {
+				itr.remove();
+				break;
+			}
+		}
 	}
 
-	public void setId_Ordr(Long id_Ordr) {
-		this.id_Ordr = id_Ordr;
+
+	public Long getId() {
+		return id;
 	}
 
-	public Long getId_Cust() {
-		return id_Cust;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-	public void setId_Cust(Long id_Cust) {
-		this.id_Cust = id_Cust;
+	public Customer getCustomer() {
+		return customer;
 	}
 
-	public Long getId_Prod() {
-		return id_Prod;
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
 	}
 
-	public void setId_Prod(Long id_Prod) {
-		this.id_Prod = id_Prod;
+	public Product getProduct() {
+		return product;
 	}
 
+	public void setProduct(Product product) {
+		this.product = product;
+	}
 
 	public Date getDate() {
 		return date;
@@ -57,5 +71,6 @@ public class Order {
 		this.date = date;
 	}
 	
+
 	
 }

@@ -6,18 +6,26 @@ public class Product {
 	private Long id;
 	private String name;
 	private int count;
-	private Double price;
+	private double price;
 	private List<Product> products;
 	
 	public Product(){
 		
 	}
 	
-	public Product(Long id, String name, int count, Double price){
+	public Product(Long id, String name, int count, double price){
 		this.id = id;
 		this.name = name;
 		this.count = count;
 		this.price = price;
+	}
+	
+	public void listAdd(Long id, String name, int count, double price) {
+		products.add(new Product(id, name, count, price));
+	}
+	
+	public void listRemove(Long id) {
+		products.remove(id);
 	}
 
 	public Long getId() {
