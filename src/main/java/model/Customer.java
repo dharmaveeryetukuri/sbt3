@@ -35,8 +35,6 @@ public class Customer {
 		customers.remove(id);
 	}
 
-
-
 	public Long getId() {
 		return id;
 	}
