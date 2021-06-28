@@ -9,11 +9,11 @@ public class Product {
 	private Double price;
 	private List<Product> products;
 	
-	Product(){
+	public Product(){
 		
 	}
 	
-	Product(Long id, String name, int count, Double price){
+	public Product(Long id, String name, int count, Double price){
 		this.id = id;
 		this.name = name;
 		this.count = count;
