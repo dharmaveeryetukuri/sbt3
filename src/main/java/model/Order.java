@@ -29,13 +29,7 @@ public class Order {
 	}
 	
 	public void listRemove(Long id) {
-		Iterator<Order> itr = orders.iterator();
-		while(itr.hasNext()) {
-			if(Order.getId().equals(id) ) {
-				itr.remove();
-				break;
-			}
-		}
+		orders.remove(id);
 	}
 
 
