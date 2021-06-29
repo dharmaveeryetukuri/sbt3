@@ -10,4 +10,5 @@ public class WMsystemApplication {
 		SpringApplication.run(WMsystemApplication.class, args);
 	}
 
+
 }

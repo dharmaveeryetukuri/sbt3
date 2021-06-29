@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/css/orderspage.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Orders page</title>
+    </head>
+
+    <body>
+        <h1 class="orders-page"> Welcome to Orders page </h1>
+        <div class="container">
+            <div class="center">
+                <button id="button-recentorders" class="button-recent-order" onclick="recentordersForm()">Recent Orders</button>  
+                <button id="button-orderslist" class="button-orders-list" onclick="orderslistForm()">Orders List</button>
+                
+            </div>
+        </div>
+        <a class="logout" align="center" href="../loginpage/login .html" style="text-decoration: none;">Logout</a>
+        
+        <!-- modal window for add product button -->
+        <div class="recent-orders-modal">
+            <div class="recentorders-modal-content" id="">
+                <div class="close-recent">+</div>
+                <form action="">
+                    <input type="text" placeholder="product name">
+                    <input type="text" placeholder="product id">
+                    <input type="text" placeholder="product price">
+                </form>
+                <script>
+                    document.getElementById('button-recentorders').addEventListener('click',
+                    function recentordersForm() {
+                        document.querySelector('.recent-orders-modal').style.display = "flex";
+                    });
+                    document.querySelector('.close-recent').addEventListener('click',
+                    function recentordersForm(){
+                        document.querySelector('.recent-orders-modal').style.display = "none";
+                    });
+                </script>
+            </div>   
+        </div>
+            
+        <!-- modal window for dispatch product button -->
+        <div class="orders-list-modal">
+            <div class="orderslist-modal-content" id="">
+                <div class="close-orderslist">+</div>
+                <form action="">
+                    <input type="text" placeholder="product name">
+                    <input type="text" placeholder="product id">
+                    <input type="text" placeholder="product price">
+                </form>
+                <script>
+                    document.getElementById('button-orderslist').addEventListener('click',
+                    function orderslistForm() {
+                        document.querySelector('.orders-list-modal').style.display = "flex";
+                    });
+                    document.querySelector('.close-orderslist').addEventListener('click',
+                    function orderslistForm(){
+                        document.querySelector('.orders-list-modal').style.display = "none";
+                    });
+                </script>
+            </div>   
+        </div>
+    </body>
+</html>
