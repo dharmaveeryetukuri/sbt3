@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./productpage.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title> product page </title>
+    </head>
+
+    <body>
+        <h1 class="prod-page"> Welcome to Product page </h1>
+        <div class="container">
+            <div class="center">
+                <button id="button-add" class="button-add-product" onclick="addprodForm()">Add product</button>  
+                <button id="button-dispatch" class="button-dispatch-product" onclick="dispatchprodForm()">Dispatch product</button>
+                <button id="button-look" class="button-lookfor-product" onclick="lookforprodForm()">Look for product</button>
+                
+            </div>
+        </div>
+        <a class="logout" align="center" href="../loginpage/login .html" style="text-decoration: none;">Logout</a>
+        
+        <!-- modal window for add product button -->
+        <div class="add-prod-modal">
+            <div class="add-modal-content" id="">
+                <div class="close-add">+</div>
+                <form action="">
+                    <input type="text" placeholder="product name">
+                    <input type="text" placeholder="product id">
+                    <input type="text" placeholder="product price">
+                    <div>
+                        <form action="">
+                            <select name="categorie" id="prod-categorie" class="prod-categorie">
+                                <optgroup label="Beauty product">
+                                <option value="clothes">Clothes</option>
+                                <option value="perfume">Perfumes</option>
+                                <option value="glasses">Glasses</option>
+                                <option value="skincare">Skin Care</option> 
+                              </optgroup>
+                              <optgroup label="Electronics">
+                                <option value="phones">Phones</option>
+                                <option value="computers">Computers</option>
+                                <option value="audio">Audio</option>
+                                <option value="camera">Camera</option>
+                                <option value="accessoires">Accessoires</option>
+                              </optgroup>
+                              <optgroup label="Home Appliances">
+                                <option value="TV">TV</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="washing machines">Washing Machines</option>
+                                <option value="cooking">Cooking</option>
+                                <option value="AC">AC</option>
+                                <option value="Art">Art</option>
+                              </optgroup>
+                              <optgroup label="Footware">
+                                <option value="sports shoes">Sports Shoes</option>
+                                <option value="casual shoes">Causal Shoes</option>
+                                <option value="sandals">Sandals</option>
+                                <option value="crops">Crops</option>
+                              </optgroup>
+                            </select>
+                    </div>
+                    <a class="add-product" href="#" style="text-decoration: none;">Add product</a>
+                </form>
+                <script>
+                    document.getElementById('button-add').addEventListener('click',
+                    function addprodForm() {
+                        document.querySelector('.add-prod-modal').style.display = "flex";
+                    });
+                    document.querySelector('.close-add').addEventListener('click',
+                    function addprodForm(){
+                        document.querySelector('.add-prod-modal').style.display = "none";
+                    });
+                </script>
+            </div>   
+        </div>
+            
+        <!-- modal window for dispatch product button -->
+        <div class="dispatch-prod-modal">
+            <div class="dispatch-modal-content" id="">
+                <div class="close-dispatch">+</div>
+                <form action="">
+                    <input type="text" placeholder="product name">
+                    <input type="text" placeholder="product id">
+                    <input type="text" placeholder="product price">
+                    <div>
+                        <form action="">
+                            <select name="categorie" id="prod-categorie" class="prod-categorie">
+                                <optgroup label="Beauty product">
+                                <option value="clothes">Clothes</option>
+                                <option value="perfume">Perfumes</option>
+                                <option value="glasses">Glasses</option>
+                                <option value="skincare">Skin Care</option> 
+                              </optgroup>
+                              <optgroup label="Electronics">
+                                <option value="phones">Phones</option>
+                                <option value="computers">Computers</option>
+                                <option value="audio">Audio</option>
+                                <option value="camera">Camera</option>
+                                <option value="accessoires">Accessoires</option>
+                              </optgroup>
+                              <optgroup label="Home Appliances">
+                                <option value="TV">TV</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="washing machines">Washing Machines</option>
+                                <option value="cooking">Cooking</option>
+                                <option value="AC">AC</option>
+                                <option value="Art">Art</option>
+                              </optgroup>
+                              <optgroup label="Footware">
+                                <option value="sports shoes">Sports Shoes</option>
+                                <option value="casual shoes">Causal Shoes</option>
+                                <option value="sandals">Sandals</option>
+                                <option value="crops">Crops</option>
+                              </optgroup>
+                            </select>
+                    </div>
+                    <a class="dispatched" href="#" style="text-decoration: none;">Dispatched</a>
+                </form>
+                <script>
+                    document.getElementById('button-dispatch').addEventListener('click',
+                    function diapatchprodForm() {
+                        document.querySelector('.dispatch-prod-modal').style.display = "flex";
+                    });
+                    document.querySelector('.close-dispatch').addEventListener('click',
+                    function dispatchprodForm(){
+                        document.querySelector('.dispatch-prod-modal').style.display = "none";
+                    });
+                </script>
+            </div>   
+        </div>
+
+        <!-- modal window for look product button -->
+        <div class="look-prod-modal">
+            <div class="look-modal-content" id="">
+                <div class="close-look">+</div>
+                <form action="">
+                    <input type="text" placeholder="product name">
+                    <input type="text" placeholder="product id">
+                    <div>
+                        <form action="">
+                            <select name="categorie" id="prod-categorie" class="prod-categorie">
+                                <optgroup label="Beauty product">
+                                <option value="clothes">Clothes</option>
+                                <option value="perfume">Perfumes</option>
+                                <option value="glasses">Glasses</option>
+                                <option value="skincare">Skin Care</option> 
+                              </optgroup>
+                              <optgroup label="Electronics">
+                                <option value="phones">Phones</option>
+                                <option value="computers">Computers</option>
+                                <option value="audio">Audio</option>
+                                <option value="camera">Camera</option>
+                                <option value="accessoires">Accessoires</option>
+                              </optgroup>
+                              <optgroup label="Home Appliances">
+                                <option value="TV">TV</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="washing machines">Washing Machines</option>
+                                <option value="cooking">Cooking</option>
+                                <option value="AC">AC</option>
+                                <option value="Art">Art</option>
+                              </optgroup>
+                              <optgroup label="Footware">
+                                <option value="sports shoes">Sports Shoes</option>
+                                <option value="casual shoes">Causal Shoes</option>
+                                <option value="sandals">Sandals</option>
+                                <option value="crops">Crops</option>
+                              </optgroup>
+                            </select>
+                    </div>
+                    <a class="lookfor" href="#" style="text-decoration: none;">Look for</a>
+                </form>
+                <script>
+                    document.getElementById('button-look').addEventListener('click',
+                    function lookforprodForm() {
+                        document.querySelector('.look-prod-modal').style.display = "flex";
+                    });
+                    document.querySelector('.close-look').addEventListener('click',
+                    function lookforprodForm(){
+                        document.querySelector('.look-prod-modal').style.display = "none";
+                    });
+                </script>
+            </div>   
+        </div>
+    </body>
+</html>

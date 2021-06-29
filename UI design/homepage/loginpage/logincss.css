@@ -1,0 +1,110 @@
+body {
+        background-color: white;
+        font-family: 'Ubuntu', sans-serif;
+        background-image: url('.//landingPage\ bgi.png');background-repeat:no-repeat; 
+        background-size:cover ;
+    }
+    .main {
+        background-color:white;
+        width: 400px;
+        height: 550px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgb(0, 0, 0, 0.5);
+        
+    }
+    
+    .sign {
+        padding-top: 40px;
+        color: #47ba6b;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 23px;
+    }
+    
+    .admin{
+    width: 76%;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .form{
+        padding-top: 40px;
+    }
+    
+    .pass {
+    width: 76%;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+.admin:focus, .pass:focus {
+        border: 2px solid rgba(0, 0, 0, 0.18) !important;
+        
+}
+    
+.login {
+        border: 1px solid #47ba6b;
+        background: transparent;
+        font-size: 18px;
+        color: #47ba6b;
+        padding: 10px 20px;
+        margin-left: 38%;
+        border-radius: 25px 25px;
+        cursor: pointer;
+ }
+.login:hover{
+        text-decoration: none;
+        color: #fff;
+        background: #47ba6b;
+        transition: background 0.5s ease,
+        padding 0.8s linear;
+}
+.forgot {
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.12);
+        color: #000000;
+        padding-top: 15px;
+}
+    
+a {
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.12);
+        color: #000000;
+        text-decoration: none
+}
+.avatar{
+        padding-left: 150px;
+}
+    
+@media (max-width: 600px) {
+    .main {
+            border-radius: 0px;
+        }
+}

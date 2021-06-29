@@ -1,0 +1,60 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
+}
+
+.heading {
+    position: relative;
+    font-size: 40px;
+    margin-top: 110px;
+    left: 190%;
+}
+
+
+/* button CSS */
+
+.button {
+    border: 1px solid #47ba6b;
+    background: transparent;
+    font-size: 26px;
+    color: #47ba6b;
+    font-weight: 150;
+    padding: 15px 30px;
+    display: inline-block;
+    margin: 0px 30px;
+    margin-top: 40px;
+    border-radius: 25px 25px;
+    cursor: pointer;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #47ba6b;
+    transition: background 0.5s ease, padding 0.8s linear;
+}
+
+.center {
+    display: inline-block;
+    margin: 0;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logout {
+    color: black;
+    font-size: 25px;
+    position: fixed;
+    top: 500;
+    margin-left: 47%;
+}
+
+.logout:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}

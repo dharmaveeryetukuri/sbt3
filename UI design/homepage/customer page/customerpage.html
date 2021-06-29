@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./customerpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>customer page</title>
+</head>
+
+<body>
+    <h1 class="customer-pg">Welcome to Customer page</h1>
+    <div class="container">
+        <div class="center">
+            <button id="button-active" class="button-active-customer">Active Customers</button>
+            <button id="button-old" class="button-old-customer">Old Customers</button>
+        </div>
+    </div>
+    <a class="logout" align="center" href="../loginpage/login .html" style="text-decoration: none;">Logout</a>
+
+    <!-- modal window for active Customer button -->
+    <div class="active-customers-modal">
+        <div class="active-modal-content" id="">
+            <div class="close-active">+</div>
+            <form action="">
+                <input type="text" placeholder="Customer name">
+                <a class="search1" href="#" style="text-decoration: none;">Search</a>
+            </form>
+            <script>
+                document.getElementById('button-active').addEventListener('click',
+                    function activeCustomer() {
+                        document.querySelector('.active-customers-modal').style.display = "flex";
+                    });
+                document.querySelector('.close-active').addEventListener('click',
+                    function activeCustomer() {
+                        document.querySelector('.active-customers-modal').style.display = "none";
+                    });
+            </script>
+        </div>
+    </div>
+
+    <div class="old-customers-modal">
+        <div class="old-modal-content" id="">
+            <div class="close-old">+</div>
+            <form action="">
+                <input type="text" placeholder="Customer name">
+                <a class="search2" href="#" style="text-decoration: none;">Search</a>
+            </form>
+            <script>
+                document.getElementById('button-old').addEventListener('click',
+                    function activeCustomer() {
+                        document.querySelector('.old-customers-modal').style.display = "flex";
+                    });
+                document.querySelector('.close-old').addEventListener('click',
+                    function activeCustomer() {
+                        document.querySelector('.old-customers-modal').style.display = "none";
+                    });
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
