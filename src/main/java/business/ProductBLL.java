@@ -9,7 +9,7 @@ import model.Product;
  * This class defines all the methods that one can use in order to interact with
  * products. This class also communicates with the database and processes the
  * incoming data and delivers it in a meaningful way to the user.
- * 
+ * ---
  * @author Bogdan Paun
  */
 public class ProductBLL {
