@@ -14,7 +14,7 @@
         <div class="center">
             <a class="button Products" href="../products page/productspage.html" style="text-decoration: none;">Products</a>
             <a class="button Orders" href="../orders page/orderspage.html" style="text-decoration: none;">Orders</a>
-            <a class="button Cutomers" href="../customer page/customerpage.html" style="text-decoration: none;">Customers</a>
+            <a id="button-customer" class="button Cutomers" style="text-decoration: none;">Search Customers</a>
         </div>
     </div>
     <a class="logout" align="center" href="../loginpage/login .html" style="text-decoration: none;">Logout</a>
@@ -25,6 +25,34 @@
                 <li class="list-inline-logout"><a href="#">Logout</a></li>
             </ul>
         </footer>  -->
+
+    <!-- modal window for active Customer button -->
+    <div class="active-customers-modal">
+        <div class="active-modal-content" id="">
+            <div class="close-active">+</div>
+            <form action="">
+                <form>
+                    <select name="categorie" id="prod-categorie" class="prod-categorie">
+                        <optgroup label="Customer type">
+                    <option value="clothes">Active Customer</option>
+                    <option value="perfume">Old Customer</option>
+                </select>
+                </form>
+                <input type="text" placeholder="Customer name">
+                <a class="search1" href="#" style="text-decoration: none;">Search</a>
+            </form>
+            <script>
+                document.getElementById('button-customer').addEventListener('click',
+                    function activeCustomer() {
+                        document.querySelector('.active-customers-modal').style.display = "flex";
+                    });
+                document.querySelector('.close-active').addEventListener('click',
+                    function activeCustomer() {
+                        document.querySelector('.active-customers-modal').style.display = "none";
+                    });
+            </script>
+        </div>
+    </div>
 </body>
 
 </html>
